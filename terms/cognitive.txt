@@ -1,38 +1,7 @@
-anticipation, expectation, preparation
-attention, attentional
-arousal
-auditory, audition
-categorization
-cognitive control
-comprehension
-conflict
-conscious, consciousness, awareness
-decision making
-emotion, emotional, mood
-error
-executive function, executive functions
-face, facial
-fear
-intelligence, knowledge
-language
-learning
-memory
-motor, movement, motion
-music, musical
-pain, nociception
-perception
-phonology, phonological, phonetic, phonetics
-prediction, predictive
-reading, lexical
-recognition, familiar, familiarity
-representation
-reward, reinforcement
-semantic, semantics
-spatial, navigation
-speech, articulation, prosody
-social, theory of mind
-somatosensory, tactile
-syntax, syntactic, grammar
-valence, affective
-vision, visual
-working memory
+physical violence, violence, assault, battery, physical aggression
+sexual violence, sexual assault, sexual abuse, rape, molestation
+psychological violence, emotional abuse, psychological abuse, mental abuse, verbal abuse
+neglect, abandonment, deprivation, disregard
+violent recidivism, reoffending, relapse into violence, repeat violence, violent repeat offending
+general recidivism, recidivism, reoffending, repeat offending, criminal relapse
+sexual recidivism, sexual recidivism, sexual reoffending, sexual repeat offending, sexual relapse
