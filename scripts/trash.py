@@ -1,8 +1,12 @@
 import pickle
 import pandas as pd
 
+# Configure Pandas to display all rows and columns
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+
 # Carrega l'objecte Counts des del fitxer .p
-file_path = './data/counts/counts_test.p'
+file_path = './data/counts/counts_violence.p'
 with open(file_path, 'rb') as file:
     counts = pickle.load(file)
 
@@ -18,5 +22,5 @@ data = counts.counts
 
 # Converteix les dades en un DataFrame per a visualitzar-les
 data_df = pd.DataFrame(data, index=counts.terms['A'].labels, columns=counts.terms['B'].labels)
-print("\nPrimeres files del DataFrame:")
-print(data_df.head())
+print("\nDataFrame complet:")
+print(data_df)

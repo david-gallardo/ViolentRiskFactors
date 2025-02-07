@@ -21,7 +21,7 @@ print(os.path.abspath(os.path.join(TERMS_DIR, 'riskfactors.txt')))
 
 # Set label for secondary terms to run
 #   Options: 'cognitive', 'disorders', 'erp'
-LABEL = 'Violence'
+LABEL = 'violence'
 
 # Set collection settings
 LOGGING = None
