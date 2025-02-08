@@ -54,7 +54,7 @@ def run_counts_collection(label, db, api_key):
     else:
         counts.add_terms('riskfactors.txt', dim='A', directory=TERMS_DIR)
         counts.add_terms('erps_exclude.txt', term_type='exclusions', dim='A', directory=TERMS_DIR)
-        counts.add_labels('erp_labels.txt', dim='A', directory=TERMS_DIR)
+        counts.add_labels('riskfactor_labels.txt', dim='A', directory=TERMS_DIR)
         # Per a la dimensió B, carreguem el fitxer que correspon al valor de "label"
         if label != 'erp':
             counts.add_terms(label + '.txt', dim='B', directory=TERMS_DIR)

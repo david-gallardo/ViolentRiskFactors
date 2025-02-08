@@ -9,7 +9,7 @@ For an overview of the search terms that were used, and brief descriptions, see
 
 The following files relate to term definitions and metadata about the ERP components included in this project.
 
-- `erps.txt` contains a list of ERP terms and synonyms
+- `riskfactors.txt` contains a list of risk factors related to violence terms and synonyms
 - `erp_labels.txt` contains a list of labels that are used for each ERP term
 - `erps_exclude.txt` contains a list of customized exclusion terms used for each ERP term
 - `latencies.txt` contains a list of canonical latencies for each ERP term
@@ -21,7 +21,7 @@ Blank lines indicate that there is no entry for the current ERP.
 
 The following lists relate to association terms:
 
-- `cognitive.txt` contains a list of the cognitive association terms
+- `violence.txt` contains a list of the violence association terms
 - `disease.txt` contains a list of the disease association terms
 
 ### Dropped Terms
