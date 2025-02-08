@@ -8,7 +8,7 @@ Below is a brief description of each notebook's purpose:
 
 The following notebooks guide the data collection and analysis process:
 
-Provides an introductory analysis of methods and research evolution in the field.
+### 00-Background
 
 This notebook provides an introductory analysis of the methods used in the literature and the evolution of research in this field.
 
