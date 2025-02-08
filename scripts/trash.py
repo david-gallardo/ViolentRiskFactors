@@ -5,22 +5,35 @@ import pandas as pd
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
-# Carrega l'objecte Counts des del fitxer .p
-file_path = './data/counts/counts_violence.p'
-with open(file_path, 'rb') as file:
-    counts = pickle.load(file)
+def load_and_display_counts(file_path):
+    """
+    Carrega l'objecte Counts des del fitxer indicat i imprimeix la informació:
+      - Tipus d'objecte carregat.
+      - Termes de la dimensió A i B.
+      - DataFrame amb la matriu de comptes.
+    Retorna una tupla (counts, data_df).
+    """
+    with open(file_path, 'rb') as file:
+        counts = pickle.load(file)
+    
+    print("Objecte carregat:", type(counts))
+    print("Terms (dim A):", counts.terms['A'].labels)
+    print("Terms (dim B):", counts.terms['B'].labels)
+    
+    data = counts.counts
+    data_df = pd.DataFrame(data, index=counts.terms['A'].labels, columns=counts.terms['B'].labels)
+    
+    print("\nDataFrame complet:")
+    print(data_df)
+    
+    return counts, data_df
 
-# Mostra informació general de l'objecte
-print("Objecte carregat:", type(counts))
+# Definim els camins dels fitxers per a violence i recidivism
+violence_file = './data/counts/counts_violence.p'
+recidivism_file = './data/counts/counts_recidivism.p'
 
-# Accedeix als termes de les dimensions A i B
-print("Terms (dim A):", counts.terms['A'].labels)  # Mostra els termes de la dimensió A
-print("Terms (dim B):", counts.terms['B'].labels)  # Mostra els termes de la dimensió B
+print("=== Loading violence counts ===")
+violence_counts, violence_df = load_and_display_counts(violence_file)
 
-# Obtenim la matriu de comptes directament amb l'atribut counts
-data = counts.counts
-
-# Converteix les dades en un DataFrame per a visualitzar-les
-data_df = pd.DataFrame(data, index=counts.terms['A'].labels, columns=counts.terms['B'].labels)
-print("\nDataFrame complet:")
-print(data_df)
+print("\n=== Loading recidivism counts ===")
+recidivism_counts, recidivism_df = load_and_display_counts(recidivism_file)
