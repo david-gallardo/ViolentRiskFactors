@@ -41,7 +41,7 @@ def collect_words_violence():
     print('\n\nRUNNING WORDS COLLECTION for:', label, '\n\n')
 
     # Define the save directory using a relative path that matches SCDB’s internal structure
-    save_dir = os.path.join(DB_NAME, 'data', 'words', 'raw')
+    save_dir = os.path.join(DB_NAME,'words', 'raw', 'violence')
     os.makedirs(save_dir, exist_ok=True)
     print("Directory created (if not exists):", os.path.abspath(save_dir))
 
@@ -68,7 +68,7 @@ def collect_words_recidivism():
 
     print('\n\nRUNNING WORDS COLLECTION for:', label, '\n\n')
 
-    save_dir = os.path.join(DB_NAME, 'data', 'words', 'raw')
+    save_dir = os.path.join(DB_NAME, 'words', 'raw', 'recidivism')
     os.makedirs(save_dir, exist_ok=True)
     print("Directory created (if not exists):", os.path.abspath(save_dir))
 
