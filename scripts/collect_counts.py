@@ -73,7 +73,7 @@ def main():
     
     # Defineix els labels per als quals vols executar la col·lecció.
     # En aquest exemple, es realitzen dues col·leccions: una per "violence" i una per "recidivism".
-    for label in ['violence', 'recidivism']:
+    for label in ['riskfactors']:
         run_counts_collection(label, db, api_key)
 
 if __name__ == "__main__":

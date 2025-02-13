@@ -18,8 +18,8 @@ from lisc.utils import SCDB, load_object
 
 # Directories and file names for loading the counts object and term files
 TERM_DIR = './terms'             # Directory for the term files (not directly used here)
-DB_NAME = '.'               # Database directory where the counts object is stored
-COG_F_NAME = 'counts_violence'   # File name (without extension) for the counts_violence object
+DB_NAME = './data'               # Database directory where the counts object is stored
+COG_F_NAME = 'words_riskfactors'   # File name (without extension) for the counts_violence object
 
 # Parameters for analysis
 N_TERMS = 3   # Number of top associations to extract for each term
