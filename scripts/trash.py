@@ -37,3 +37,11 @@ violence_counts, violence_df = load_and_display_counts(violence_file)
 
 print("\n=== Loading recidivism counts ===")
 recidivism_counts, recidivism_df = load_and_display_counts(recidivism_file)
+
+import pickle
+with open(violence_file, "rb") as f:
+    obj = pickle.load(f)
+
+print(type(obj))
+print(dir(obj))
+print(obj.terms["B"].labels)
