@@ -17,7 +17,7 @@ The goal of this project is to explore and summarize the existing literature on 
 
 For data collection, this project uses two main approaches:
 - The 'Words' approach gathers text and metadata (e.g., authors, journals, keywords, and publication date) from all articles identified through search terms. This data is used to build profiles of violence and delinquency risk factors.
-- The 'Count' approach collects data on the co-occurrence of violence-related terms and other pre-defined terms of interest, including psychological, social, and environmental risk factors. This data is used to analyze patterns and relationships between different risk factors. This project is based on [Donoghue & Votek (2022)](https://www.nature.com/articles/s41598-022-05939-9).
+- The 'Count' approach collects data on the co-occurrence of violence-related terms and other pre-defined terms of interest, including psychological, social, and environmental risk factors. This data is used to analyze patterns and relationships between different risk factors. This project is inspired and based on [Donoghue & Votek (2022)](https://www.nature.com/articles/s41598-022-05939-9).
 
 The project aims to analyze trends in the literature and provide insights into how various risk factors relate to violent and delinquent behavior.
 
